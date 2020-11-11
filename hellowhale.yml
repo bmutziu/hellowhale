@@ -18,13 +18,13 @@ spec:
     spec:
       containers:
       - name: hello-whale-container
-        image: vamsijakkula/hellowhale:latest
+        image: bmutziu/hellowhale:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
 apiVersion: v1
-kind: Service 
+kind: Service
 metadata:
   name: hello-whale-svc
   labels:
